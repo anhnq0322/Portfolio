@@ -1,0 +1,155 @@
+
+header{
+    width: 270px;
+    float: left;
+    position: fixed;
+    -webkit-font-smoothing: subpixel-antialiased; /* for Chrome and Safari */
+    /* background-color: antiquewhite; */
+    display: block;
+}
+
+body{
+    padding: 50px;
+    /* display: block; */
+    font: 14px / 1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    margin: 8px;
+}
+section{
+    float: right;
+    width: 500px;
+    padding-bottom: 50px;
+}
+.container{
+    width: 860px;
+    margin: 0 auto;
+}
+#avt{
+    max-width: 100%;
+    border-radius: 50%;
+}
+p{
+    margin: 0px 0 20px;
+}
+hr{
+    border: 0;
+    background: #e5e5e5;
+    height: 1px;
+    margin: 60px 0;
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 35px;
+}
+h1{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 28px;
+    margin-bottom: 35px;
+    margin-top: 0;
+
+}
+a{ text-decoration: none;}
+.skillbox{
+    margin: 0 0 0 20px;
+}
+h3{
+    margin: 16px 0 13px 0;
+}
+.skill img{
+    margin-right: 30px;
+}
+/* .contact-info {
+    display: grid;
+    align-items:flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+  } */
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin: 0 30px 0 0;
+    flex-wrap: wrap;
+  }
+  
+  .info-item img {
+    margin-right: 10px;
+  }
+  
+  .info-item a,
+  .info-item span {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  /* Styles cho màn hình nhỏ (điện thoại di động) */
+@media only screen and (max-width: 767px) {
+    header {
+        width: 100%;
+        float: none;
+        position: static;
+        text-align: center;
+    }
+
+    section {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .skillbox {
+        margin: 0;
+        text-align: center;
+    }
+
+    .skill img {
+        margin: 10px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .info-item {
+        margin: 10px;
+    }
+}
+
+/* Styles cho màn hình vừa (máy tính bảng) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    header {
+        width: 200px;
+    }
+
+    section {
+        width: calc(100% - 220px);
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+/* Styles cho màn hình lớn (máy tính để bàn) */
+@media only screen and (min-width: 992px) {
+    header {
+        width: 270px;
+    }
+
+    section {
+        width: 500px;
+    }
+
+    .container {
+        width: 860px;
+    }
+}
